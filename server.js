@@ -10,10 +10,8 @@ app.use(bodyParser.json());
 
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/WebApplications_A1', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect('mongodb://localhost:27017/WebApplications_A1');
+
 
 mongoose.connection.on('connected', () => {
     console.log('Connected to MongoDB successfully!');
